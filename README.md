@@ -13,27 +13,25 @@ This project analyzes synthetic electronic health record (EHR) data from Synthea
 - Emergency encounters account for 30% of all visits but 45% of total costs.
 - Top 3 diagnoses: Hypertension, Diabetes, Acute bronchitis.
 
-## Files
-- `/sql` – SQL queries used for data extraction and analysis.
-- `/dashboard` – Power BI dashboard file and screenshots.
-
 ## Dashboard Pages
-### Page 1: Overview
-![Overview](Page1_Overview.png)
+### Page 1: Hospital Overview
+![Overview](hospital_overview_keymetrics.png)
 
 ### Page 2: Clinical Insights
-![Clinical Insights](Page2_Clinical.png)
+![Clinical Insights](clinical_insights.png)
 
 ### Page 3: Financial Insights
-![Financial Insights](Page3_Financial.png)
+![Financial Insights](financial_insights.png)
 
-## How to Use
-1. Clone this repository.
-2. Open the Power BI file (`Synthea_Dashboard.pbix`) to explore the dashboard.
-3. Run SQL scripts in MySQL Workbench on your own Synthea dataset to reproduce the analysis.
+## SQL Queries
+Key queries used in analysis:
+- [Total patients](sql_scripts/total_patients.sql)
+- [Average length of stay](sql_scripts/avg_length_of_stay.sql)
+- [Top 10 diagnoses](sql_scripts/top_10_diagnoses.sql)
+- [Patients not seen in over a year](sql_scripts/patients_not_seen.sql)
+- [ROW_NUMBER to sequence encounters](sql_scripts/row_number_encounters.sql)
 
 ## Contact
 **Shreyas Victoria B**  
 📧 victoriabhaskar07@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/shreya-victoria-6bb8511b9/)# Synthea-Healthcare-Analytics-
-"Healthcare data analysis project using Synthea synthetic EHR data – SQL and Power BI."
+🔗 [LinkedIn](https://www.linkedin.com/in/shreya-victoria-6bb8511b9/)
